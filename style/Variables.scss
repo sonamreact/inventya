@@ -1,0 +1,48 @@
+@import './Mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+// Colors
+
+$ambiant-color: #00236D; //Used for menu color
+$primary-color: #f48028;
+$secondary-color: #000;
+$light-secondary-color: #6dade6;
+$danger-color: #f04134;
+$success-color: #7BC142;
+$info-color: #A4D9D3;
+
+$black: #0c0b0f;
+$white: #ffffff;
+$gray: #5F5F5F;
+$dark-gray: #787878;
+$medium-gray: #a5a5a5;
+$light-gray: #d9d9d9;
+
+$title-font: 'Gilam', sans-serif;
+
+$font-family: 'Roboto', sans-serif;
+$font-color: #333;
+
+$page-background: #f9f7ed;
+
+$sidebar-background: $ambiant-color;
+$sidebar-text-color: $white;
+$sidebar-selected-item-background: darken($sidebar-background, 20%);
+$sidebar-footer-background: darken($sidebar-background, 5%);
+$sidebar-sub-menu-background: darken($sidebar-background, 5%);
+
+$header-background: $sidebar-background;
+$header-color: $black;
+
+// We have multiple shadow levels to represent perspective
+$shadow-0: 0 2px 2px rgba(0, 0, 0, 0.1);
+$shadow-1: 2px 4px 6px rgba(0, 0, 0, 0.1);
+* {
+  transition: box-shadow 0.1s ease-in;
+}
+
+$header-height: 92px;
+@import './Markdown.scss';
+
+//fonts
+$font-primary: 'Source Sans Pro', sans-serif;

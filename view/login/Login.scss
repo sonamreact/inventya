@@ -1,0 +1,63 @@
+@import 'shared/style/Variables.scss';
+
+
+
+.login {
+  min-height: 100vh;
+  .login-form-row{
+    min-height: 100vh;
+    .login-text-column{
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .login-text-wrapper{
+        padding: 0 20px;
+        .title{
+          font-size: 2rem;
+          line-height: 1;
+          font-weight: 100;
+        }
+        .heading{
+          font-size: 3.5rem;
+          line-height: 1;
+          color: #66c6bd;
+          font-weight: 100;
+        }
+        .bar-wrapper{
+          display: flex;
+          .bar{
+            height: 20px;
+            flex: 1;
+            background: linear-gradient(90deg, #1fa9e1 0 12%, #7bc142 12% 24%, #f48028 24% 36%, #66c6bd 36% 100%);
+          }
+          .bar-text{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .login-form-wrapper-column{
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .login-form-wrapper {
+        //padding: 80px 0 0 110px;
+        max-width: 400px;
+        .form-logo{
+          max-height: 45px;
+          margin-bottom: 50px;
+        }
+        .login-form{
+          color: #fff;
+          label{
+            color: #fff !important;
+            white-space: initial !important;
+          }
+        }
+      }
+    }
+  }
+}

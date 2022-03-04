@@ -1,0 +1,230 @@
+@import '../shared/style/Variables.scss';
+
+.footer-wrapper {
+  background: $primary-color;
+
+  .ant-row {
+    margin: 0 !important;
+  }
+
+  span {
+    color: white;
+    font-size: 12px;
+  }
+
+  .primary-footer {
+    padding: 10px;
+    background-color: $primary-color;
+
+    span {
+      color: white;
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    svg {
+      color: white;
+      vertical-align: sub;
+    }
+
+    .links {
+      .link {
+        padding: 0 20px;
+        display: inline-block;
+        height: 31px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .secondary-footer {
+    padding: 10px;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+
+.home-header-row-2 {
+  height: 60px;
+  padding: 0 20px;
+
+  .ant-checkbox-wrapper {
+    line-height: 30px;
+  }
+
+  .ant-row {
+    height: 100%;
+
+    svg {
+      vertical-align: bottom;
+    }
+
+    span, a {
+      font-size: 12px;
+    }
+  }
+
+  .search-bar {
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.05);
+
+    .ant-input-affix-wrapper {
+      padding: 5px 15px;
+      border-bottom-left-radius: 5px !important;
+      border-top-left-radius: 5px !important;
+
+      input {
+        font-size: 14px;
+      }
+    }
+
+    button {
+      border-bottom-right-radius: 5px !important;
+      border-top-right-radius: 5px !important;
+      height: 36px;
+      padding-top: 4px;
+    }
+  }
+}
+
+.home-header-row-3 {
+  background-color: black;
+  padding: 15px 20px;
+  text-align: center;
+
+  .menu-items {
+    text-align: center;
+
+    .menu-item {
+      padding: 0 10px;
+      display: inline-block;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.ant-table-scroll-horizontal{
+  table{
+    width: 100% !important;
+  }
+}
+
+.header-tabs{
+  .ant-tabs-nav{
+    margin-bottom: 0px !important;
+    .ant-tabs-nav-list {
+      .ant-tabs-tab{
+        //version change
+        /*&:nth-last-of-type(2){
+          margin: 0;
+        }*/
+        .ant-tabs-tab-btn{
+          color: #fff;
+          font-size: 1.1rem;
+          .header-icon-img{
+            max-height: 16px;
+            vertical-align: baseline;
+          }
+          &:hover{
+            color: $primary-color;
+            .header-icon-img{fill: $primary-color;}
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+.header-user-text{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  span{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+  }
+}
+
+.btn-spin-wrapper{
+  .ant-spin-dot-item{
+    background-color: #ffeddf;
+  }
+}
+
+.page-title{
+  font: normal normal 600 28px/32px $font-primary;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+.header-tabs img{
+height:15px;
+width:15px;
+margin-right:5px;
+margin-bottom:5px;
+
+}
+ #span1:hover #img1{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+ #span2:hover #img2{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+#span3:hover #img3{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+#span4:hover #img4{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+#span5:hover #img5{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+
+header-tabs:active #tab1:active #span1:active #img1{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+
+header-tabs:active #tab2:active #span2:active #img2{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+header-tabs:active #tab3:active #span3:active #img3{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+header-tabs:active #tab4:active #span4:active #img4{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+header-tabs:active #tab5:active #span5:active #img5{
+filter: invert(43%) sepia(30%) saturate(3678%) hue-rotate(359deg) brightness(104%) contrast(108%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

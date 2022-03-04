@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+	<title>
+		support 17
+	</title>
+	<g class="nc-icon-wrapper" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#ffffff"   stroke="#0033A0">
+		<line data-cap="butt" data-color="color-2" fill="none" stroke-miterlimit="10" x1="19.778" y1="4.222" x2="15.536" y2="8.464" />
+		<line data-cap="butt" data-color="color-2" fill="none" stroke-miterlimit="10" x1="19.778" y1="19.778" x2="15.536" y2="15.536" />
+		<line data-cap="butt" data-color="color-2" fill="none" stroke-miterlimit="10" x1="4.222" y1="19.778" x2="8.464" y2="15.536" />
+		<line data-cap="butt" data-color="color-2" fill="none" stroke-miterlimit="10" x1="4.222" y1="4.222" x2="8.464" y2="8.464" />
+		<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)" fill="none"    stroke="#0033A0" stroke-miterlimit="10" cx="12" cy="12" rx="11" ry="11" />
+		<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)" fill="none" stroke="#0033A0" stroke-miterlimit="10" cx="12" cy="12" rx="5" ry="5" />
+	</g>
+</svg>

@@ -1,0 +1,509 @@
+.ant-btn-round.ant-btn-lg {
+  padding: 10px 20px;
+  height: auto;
+}
+
+//copied
+body,
+.ant-table,
+.ant-form,
+.ant-input,
+.ant-select,
+.ant-form-item,
+.ant-menu,
+.ant-dropdown,
+.ant-checkbox-wrapper,
+.ant-calendar-picker-container,
+.ant-tabs {
+  font-family: $font-family !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $font-color;
+}
+
+// Popover
+.ant-popover-inner-content {
+  .ant-menu-vertical {
+    border: none;
+    margin: 0 -16px;
+
+    .ant-menu-item {
+      padding: 0 8px;
+    }
+  }
+}
+
+.menu-popover {
+  padding: 0;
+
+  .ant-popover-arrow {
+    display: none;
+  }
+}
+
+// Input
+
+.ant-form-item > .ant-form-item,
+.ant-form-item :not(.ant-form) > .ant-form-item {
+  margin-bottom: -24px;
+}
+
+.ant-col-xs-24 {
+  &.ant-form-item-label {
+    text-align: left;
+  }
+}
+
+.ant-form-item-label label {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ant-select-selection,
+.ant-time-picker-input,
+.ant-input {
+  background-color: #ffffff;
+}
+
+.ant-calendar-picker-input:disabled {
+  background: $white;
+  color: rgb(84, 84, 84);
+}
+
+.ant-calendar-picker:hover .ant-input:not([disabled]),
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+.ant-input-affix-wrapper:hover .ant-input,
+.ant-input:hover {
+  border-color: $primary-color;
+}
+
+.ant-calendar-picker:focus .ant-input:not([disabled]),
+.ant-input-affix-wrapper:focus .ant-input,
+.ant-input:focus,
+.ant-input.focus {
+  @include box-shadow(0 0 0 2px rgba($primary-color, 0.2));
+  border-color: $primary-color;
+}
+
+.input-group-addon {
+  background-color: #eee;
+  border: 1px solid $primary-color;
+
+  // Reset Select's style in addon
+  .ant-select-open,
+  .ant-select-focused {
+    .ant-select-selection {
+      color: $primary-color;
+    }
+  }
+}
+
+.ant-select-selection {
+  &:focus,
+  &:active {
+    @include box-shadow(0 0 0 2px rgba($primary-color, 0.2));
+    border-color: $primary-color;
+  }
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  .ant-select-focused & {
+    @include box-shadow(0 0 0 2px rgba($primary-color, 0.2));
+    border-color: $primary-color;
+  }
+}
+
+// Upload
+.ant-upload.ant-upload-drag {
+  p.ant-upload-drag-icon .anticon {
+    color: $primary-color;
+  }
+
+  &:not(.ant-upload-disabled):hover {
+    border-color: $primary-color;
+  }
+}
+
+// Checkbox
+.ant-checkbox, .ant-tree-checkbox {
+  &-wrapper:hover .ant-checkbox, .ant-tree-checkbox
+  &:hover,
+  &-focused {
+    .ant-checkbox-inner, .ant-tree-checkbox-inner {
+      border-color: $primary-color;
+    }
+  }
+
+  &-inner {
+    border: 1px solid $primary-color;
+    background-color: $white;
+
+    &:after {
+      border: 2px solid $white;
+    }
+  }
+
+  &-checked, {
+    .ant-checkbox-inner, .ant-tree-checkbox-inner {
+      background-color: $primary-color;
+      border-color: $primary-color;
+
+    }
+  }
+
+  &-indeterminate {
+    .ant-checkbox-inner, .ant-tree-checkbox-inner {
+      border-color: $primary-color !important;
+
+    }
+
+    .ant-checkbox-inner::after, .ant-tree-checkbox-inner::after {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+
+.ant-radio {
+  &-wrapper:hover .ant-radio,
+  &:hover,
+  &-focused {
+    .ant-radio-inner {
+      border-color: $primary-color;
+    }
+  }
+
+  &-checked {
+    .ant-radio-inner {
+      border-color: $primary-color;
+    }
+  }
+
+  &-inner {
+    border: 1px solid $primary-color;
+    background-color: $white;
+
+    &:after {
+      background-color: $primary-color;
+    }
+  }
+
+  &-button-wrapper:hover,
+  &-button-wrapper:focus {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+
+  &-button-wrapper-checked,
+  &-button-wrapper-checked:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    box-shadow: -1px 0 0 0 $primary-color;
+  }
+
+  &-button-wrapper-checked:first-child {
+    border-color: $primary-color;
+  }
+}
+
+.ant-switch {
+  &-checked {
+    background-color: $primary-color;
+  }
+}
+
+// Button
+.ant-btn-group .ant-btn-primary:last-child:not(:first-child),
+.ant-btn-group .ant-btn-primary + .ant-btn-primary {
+  border-left-color: $primary-color;
+}
+
+.ant-btn-background-ghost.ant-btn {
+  color: $primary-color;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &-primary {
+    color: $primary-color;
+    background-color: transparent;
+    border-color: $primary-color;
+
+    &:hover,
+    &:focus {
+      color: lighten($primary-color, 7%);
+      border-color: lighten($primary-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: darken($primary-color, 7%);
+      border-color: darken($primary-color, 7%);
+    }
+  }
+
+  &-danger {
+    color: $white;
+    background-color: transparent;
+    border-color: $danger-color;
+
+    &:hover,
+    &:focus {
+      color: lighten($danger-color, 7%);
+      border-color: lighten($danger-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: darken($danger-color, 7%);
+      border-color: darken($danger-color, 7%);
+    }
+  }
+
+  &-success {
+    color: $white;
+    background-color: transparent;
+    border-color: $success-color;
+
+    &:hover,
+    &:focus {
+      color: lighten($success-color, 7%);
+      border-color: lighten($success-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: darken($success-color, 7%);
+      border-color: darken($success-color, 7%);
+    }
+  }
+
+  &-info {
+    color: $white;
+    background-color: transparent;
+    border-color: $info-color;
+
+    &:hover,
+    &:focus {
+      color: lighten($info-color, 7%);
+      border-color: lighten($info-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: darken($info-color, 7%);
+      border-color: darken($info-color, 7%);
+    }
+  }
+}
+
+.ant-btn {
+  background-color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $primary-color;
+
+    border-color: $primary-color;
+  }
+
+  &-link {
+    padding: 6.4px 6.4px;
+    background-color: transparent;
+
+    color: $primary-color;
+
+    &:hover {
+      color: darken($primary-color, 10%);
+    }
+  }
+
+  &-primary {
+    color: $white;
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: lighten($primary-color, 7%);
+      border-color: lighten($primary-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: $white;
+      background-color: darken($primary-color, 7%);
+      border-color: darken($primary-color, 7%);
+    }
+  }
+
+  &-danger {
+    color: $white;
+    background-color: $danger-color;
+    border-color: $danger-color;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: lighten($danger-color, 7%);
+      border-color: lighten($danger-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: $white;
+      background-color: darken($danger-color, 7%);
+      border-color: darken($danger-color, 7%);
+    }
+  }
+
+  &-success {
+    color: $white;
+    background-color: $success-color;
+    border-color: $success-color;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: lighten($success-color, 7%);
+      border-color: lighten($success-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: $white;
+      background-color: darken($success-color, 7%);
+      border-color: darken($success-color, 7%);
+    }
+  }
+
+  &-info {
+    color: $white;
+    background-color: $info-color;
+    border-color: $info-color;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: lighten($info-color, 7%);
+      border-color: lighten($info-color, 7%);
+    }
+
+    &:active,
+    &.active {
+      color: $white;
+      background-color: darken($info-color, 7%);
+      border-color: darken($info-color, 7%);
+    }
+  }
+}
+
+// Badges
+.ant-badge.error .ant-badge-status-text {
+  color: $danger-color;
+}
+
+// Modal
+.ant-modal {
+  form > .ant-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+
+.ant-tag {
+  margin-left: 5px;
+}
+
+.ant-input-number {
+  width: 100%;
+  margin-right: 3px;
+}
+
+// Steps
+.ant-steps-item-process .ant-steps-item-icon {
+  background: $primary-color;
+  border-color: $primary-color;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+  border-color: $primary-color;
+
+  > .ant-steps-icon {
+    color: $primary-color;
+  }
+}
+
+.ant-steps-item-finish
+> .ant-steps-item-container
+> .ant-steps-item-content
+> .ant-steps-item-title::after {
+  background-color: $primary-color;
+}
+
+.ant-steps-dot .ant-steps-item-process .ant-steps-item-icon {
+  background: none;
+}
+
+.ant-steps-item-process
+.ant-steps-item-icon
+> .ant-steps-icon
+.ant-steps-icon-dot,
+.ant-steps-item-finish
+.ant-steps-item-icon
+> .ant-steps-icon
+.ant-steps-icon-dot,
+.ant-steps-item-finish
+> .ant-steps-item-container
+> .ant-steps-item-tail::after {
+  background: $primary-color;
+}
+
+//end copied
+
+.ant-card-body {
+  padding: 20px;
+
+}
+
+.ant-modal-content {
+  border-radius: 6px;
+
+  .ant-modal-confirm-btns {
+    button {
+      border-radius: 50px;
+
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      font-family: "Gilam", Arial, Verdana, Tahoma, sans-serif;
+    }
+  }
+}
+
+
+@import './table';
+@import './tabs';
+@import './menu';
+@import './form';

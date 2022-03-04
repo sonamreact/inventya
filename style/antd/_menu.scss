@@ -1,0 +1,32 @@
+.ant-layout-sider {
+  .ant-menu-item, .ant-menu-submenu-title {
+    &:hover {
+      color: $primary-color;
+      svg {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .ant-menu-item-selected {
+    background-color: $primary-color !important;
+
+    &:after {
+      border-right-color: $primary-color !important;
+    }
+
+    &:hover {
+      color: $sidebar-text-color;
+
+      svg {
+        color: $sidebar-text-color;
+      }
+    }
+
+    color: $sidebar-text-color;
+
+    svg {
+      color: $sidebar-text-color;
+    }
+  }
+}

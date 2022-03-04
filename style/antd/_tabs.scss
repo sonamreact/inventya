@@ -1,0 +1,25 @@
+.ant-tabs-nav {
+  .ant-tabs-tab:hover,
+  .ant-tabs-tab-active {
+    color: $primary-color;
+  }
+
+  .ant-tabs-ink-bar {
+    background-color: $primary-color;
+  }
+}
+.ant-tabs-tab-active{
+  .ant-tabs-tab-btn{
+    color: $primary-color !important;
+  }
+}
+
+.ant-modal-body .ant-tabs.ant-tabs-top.ant-tabs-line {
+  margin: -24px -24px 0 -24px;
+  .ant-tabs-nav-wrap {
+    padding-left: 12px;
+  }
+  .ant-tabs-tabpane {
+    padding: 0 24px;
+  }
+}

@@ -1,0 +1,67 @@
+@import 'shared/style/Variables.scss';
+
+
+
+.otp {
+  min-height: 100vh;
+  .otp-form-row{
+    min-height: 100vh;
+    .otp-text-column{
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .otp-text-wrapper{
+        padding: 0 20px;
+        .title{
+          font-size: 2rem;
+          line-height: 1;
+          font-weight: 100;
+        }
+        .heading{
+          font-size: 3.5rem;
+          line-height: 1;
+          color: #66c6bd;
+          font-weight: 100;
+        }
+        .bar-wrapper{
+          display: flex;
+          .bar{
+            height: 20px;
+            flex: 1;
+            background: linear-gradient(90deg, #1fa9e1 0 12%, #7bc142 12% 24%, #f48028 24% 36%, #66c6bd 36% 100%);
+          }
+          .bar-text{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .otp-form-wrapper-column{
+      background-color: #000;
+      .otp-form-wrapper {
+        padding: 70px 0 0 100px;
+        max-width: 500px;
+        text-align: center;
+        .form-logo{
+          max-height: 45px;
+          margin-bottom: 50px;
+        }
+        .logo-subtitle{
+          color: #fff;
+        }
+        .otp-form{
+          color: #fff;
+          margin-top: 50px;
+          label{
+            color: #fff !important;
+            white-space: initial !important;
+            height: auto !important;
+            line-height: 1;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
